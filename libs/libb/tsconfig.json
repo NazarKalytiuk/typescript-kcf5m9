@@ -1,7 +1,13 @@
 {
     "extends": "../../tsconfig.json",
     "exclude": ["../liba"],
+    "include": ["b.ts"],
+    "files": ["b.ts"],
     "compilerOptions": {
-        "noImplicitAny": true
+        "skipDefaultLibCheck": true,
+        "skipLibCheck": true,
+        "baseUrl": ".",
+        "noImplicitAny": true,
+        "types": []
     }
 }
